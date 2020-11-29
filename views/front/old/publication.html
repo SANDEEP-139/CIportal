@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+<link href="images/favicon.png" rel="icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<title></title>
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />-->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader"><div data-loader="dual-ring"></div></div><!-- Preloader End -->
+
+<!-- Document Wrapper   
+============================================= -->
+
+<div class="feedback feedback-toggle rotate" style="width: 170px;margin-left: -20px;" ><small>Request Callback</small></div>
+<div class="feedback feedback-form-wrapper">
+    <form id="feedback-form" class="form-horizontal" method="post">
+        <legend class="text-center">Interested? provide your contact details below</legend>
+
+        <div class="form-group">
+          <label class="sr-only">Your Name</label>
+          <input id="username" name="username" class="form-control" autocomplete="off" placeholder="Your Name *" required="required" type="text">   
+        </div>
+    <div class="form-group">
+          <label class="sr-only">Email ID</label>
+          <input name="emailquery" id="emailquery" class="form-control" autocomplete="off" placeholder="Your Email *" required="required" type="email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only">Phone Number</label>
+          <input name="phoneno" id="phoneno" class="form-control" autocomplete="off" placeholder="Phone Number *" required="required" type="number">
+        </div>
+        <div class="form-group">
+            <label class="sr-only">Issue</label>
+            <textarea id="issue" name="issue" class="form-control" rows="3" autocomplete="off" placeholder="Write Your Issue *" required="required"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="control-label">I need service on</label>
+          <input class="form-control" name="dateOfReg" id="dateOfReg" autocomplete="off" placeholder="02/03/2014" required="required" min="2015-05-1" type="text">
+        </div>
+    
+        <div class="form-group">
+      <button type="submit" name="sendissuedetails" id="sendissuedetails" class="btn btn-default">Send Details</button>
+        </div>
+    </form>
+</div>
+
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          
+          <!-- Logo
+          ============================================= -->
+          <div class="logo">
+            <a href="index.html"><img src="images\make-logo\logo.png" alt="Quickai" width="127" /></a>
+          </div><!-- Logo end -->
+          
+        </div>
+
+
+        <div class="header-column justify-content-end">
+        
+          <!-- Primary Navigation
+          ============================================= -->
+          <nav class="primary-menu navbar navbar-expand-lg hidden-xs">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+        <li class="dropdown"> <a class="dropdown-toggle" href="index.html">Home</a>
+                  
+        
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" href="#">Track My Ad</a> 
+                 
+                </li>
+                <li class="dropdown dropdown-mega"> <a class="dropdown-toggle" href="howtobook.html">How To Booking</a> 
+                  
+                </li>
+                 <li class="dropdown dropdown-mega"> <a class="dropdown-toggle" href="bookads.html">Category</a> 
+                  
+                </li>
+
+                <li class="dropdown active"> <a class="dropdown-toggle" href="#">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                   
+                    <li><a class="dropdown-item" href="profile.html">TOP NEWSPAPERS</a></li>
+                    <li><a class="dropdown-item" href="support.html">Support</a></li>
+                    <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                  </ul>
+                </li>
+               <li class="login-signup ml-lg-2"><a class="pl-lg-4 pr-0" data-toggle="modal" data-target="#login-signup" href="#" title="Login / Sign up">Login / Sign up <span class="d-none d-lg-inline-block"><i class="fa fa-user"></i></span></a></li>
+                <li><div id="mySidenav" class="sidenav"  >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="co3">
+  <a href="#">About</a><hr>
+  <a href="#">TOP NEWSPAPERS</a><hr>
+  <a href="#">TOP CATEGORIES</a><hr>
+  <a href="#">TOP CITIES TO ADVERTISE</a><hr>
+  <a href="#">OUR CLIENTS</a><hr>
+  <a href="#">TESTIMONIALS</a><hr>
+  <a href="#">PRESS/MEDIA</a><hr>
+  <a href="#">CAREER</a><hr>
+  <a href="#">BLOG</a><hr>
+  <a href="#">QUICK PAYMENT LINK</a><hr>
+  <a href="#">CONTACT US</a><hr>
+  </div>
+</div>
+
+<span id="toggal-btn" onclick="openNav()">&#9776;</span></li>
+              </ul>
+            </div>
+                 
+          </nav><!-- Primary Navigation end --> 
+          
+        </div>
+        
+        <!-- Collapse Button
+        ============================================= -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+      </div>
+    </div>
+  </header>
+<!-----------------publication.html start---------------------->
+<div class="container" id="bg24">
+  <div class="row">
+    <div class="col-lg-3 text-center">
+      <div class="border1">
+      <img src="images\make-logo\hindu.jpg" class="img-fluid">
+      <div class="matri-head" >English Daily</div>
+      </div>
+      <br>
+
+      <div class="border1">
+      <img src="images\make-logo\hindu-news.jpg" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-lg-9 publ">
+
+      <h2>Book Hindu Newspaper Advertisement Online</h2>
+      <p>The Hindu is a leading English Daily Newspaper which started in 1878 as a weekly and became a daily newspaper in 1889. The newspaper has been growing since then and is quite popular amongst South India. With a large base in South India, the newspaper has a massive readership of 22.6 lakhs and an average daily circulation of 15.58 lakhs. The newspaper is also considered as the best in terms of quality of content and information.</p>
+      <p>The Hindu newspaper ad has a good reach and will fetch a lot of audiences especially in the Southern India. With bookmyad, The Hindu newspaper ads booking can be done quite easily without any problem.</p>
+      <p>The Hindu newspaper advertisement rate with bookmyad to book any kind of display ad, classified ad and many others. You can also book your business ads, property ads, matrimonial ads, tender ads and many more at discounted rates. With us you can make your advertisement reach out to people all over the nation on a big scale including major cities like Delhi, Mumbai, Bangalore, Kolkata, Chennai, Chandigarh, Nagpur and many more other cities like these. Contact us for best packages and discounts</p>
+    </div>
+  </div>
+  <div class="row">
+  	<div class="col-lg-3">
+  	<div class="calcu1">2044579<br>Circulation</div>
+  	</div>
+  	<div class="col-lg-3">
+  	<div class="calcu1">22<br>Cities</div>	
+  	</div>
+  	<div class="col-lg-3">
+     <div class="calcu1">381<br>Categories</div>
+  	</div>
+  	<div class="col-lg-3">
+  	<div class="calcu1">1<br>Language</div>
+  	</div>
+  </div>
+</div>
+</div>
+
+  <div class="container" id="public3" style="padding: 0px;">
+  	<div class="row">
+  		<div class="col-lg-12 ">
+  			<h4>— Package of the The Hindu —</h4>
+  		</div>
+  	</div>
+  </div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 public2" style="background: #ffff; padding-bottom: 10px;">
+			<h4>LOCATION</h4>
+			<input id="input1" type="text" name="" placeholder="Search"><br>
+			<div id="overflowTest">
+		<input type="checkbox"><span>Bangalore </span><span class="pull-right">(111005 copies)</span><br>
+        <input type="checkbox" ><span>Chennai</span><span class="pull-right">(418998 copies)</span><br>	
+        <input type="checkbox"><span>Coimbatro </span><span class="pull-right">(126491 copies)</span><br>
+  <input type="checkbox"><span>Delhi </span><span class="pull-right">(111091 copies)</span><br>
+  <input type="checkbox"><span>Hyderabad </span><span class="pull-right">(184267 copies)</span><br>
+  <input type="checkbox"><span>Madurai </span><span class="pull-right">(82751 copies)</span><br>
+  <input type="checkbox"><span>Mangalore </span><span class="pull-right">(18000 copies)</span><br>
+  <input type="checkbox"><span>Mysore </span><span class="pull-right">(18407 copies)</span><br>
+  <input type="checkbox"><span>Trichy </span><span class="pull-right">(73306 copies)</span><br>
+  <input type="checkbox"><span>Vijayawada </span><span class="pull-right">(60003 copies)</span><br>
+  <input type="checkbox"><span>Kolkata </span><span class="pull-right">(23515 copies)</span><br>
+  <input type="checkbox"><span>Pondicherry </span><span class="pull-right">(25000 copies)</span><br>
+</div>
+<h6 style="font-size: 13px;padding-top: 10px;">Category</h6>
+<select style="width: 100%;" class="lp-select" name="category_id" id="category_id" onchange="get_publication_package_result();"> <option value="4" selected="">Matrimonial</option> <option value="101">Marriage Bureau</option> <option value="2">Change of Name</option> <option value="5">Recruitment job</option> <option value="3">Education</option> <option value="98">property real estate</option> <option value="100">Lost and Found</option> <option value="1">Business</option> <option value="102">Obituary(Death Announcement)</option> <option value="103">Remembrance(Unforgettable)</option> <option value="109">public tender notices</option> <option value="6">Services</option> <option value="104">Retail/Shopping</option> <option value="106">Personal Announcement</option> <option value="108">Computers and Hardware</option> <option value="107">Astrology</option> <option value="110">Vehicles Automobiles</option> <option value="105">Tours and Travel</option> <option value="99">Property-Rental</option> <option value="3660">Entertainment</option> <option value="2967">Beauty &amp; Wellness</option> <option value="2968">Call Centre Employees</option> <option value="3167">Prajapati</option> <option value="3573">Bungalow For Sale</option> <option value="3570">For Rent/Lease/To Let</option> <option value="3572">Outright Sale</option> <option value="3571">Property Others </option> <option value="3606">SMS CAMPAIGN</option>
+</select>
+<h6 style="font-size: 13px;padding-top: 10px;">Ad Type</h6>
+<select style="width: 100%; " class="lp-select" name="ad_type_id" id="ad_type_id" onchange="get_publication_package_result();"> <option value="1">Text Classified Ad</option> <option value="2">Display Classified - Single Column</option> </select>
+		</div>
+		<div class="col-lg-3 text-center">
+		<div class="public4">
+			<h2><img src="images\make-logo\hindu.jpg" class="img-fluid"></h2>
+			<hr>
+			<h4>The Hindu - All Editions + Delhi</h4>
+			<p>Hindu - All Southern Editions + Delhi</p>
+			<h3><img src="images\make-logo\rupe.png"> <strong>1300</strong><br><span1>For first 2 Lines</span1></h3>
+			<div class="row" id="btn-section" style="padding: 15px;">
+  <div class="col-sm-6">
+   <input id="bt3" type="button" class="btn btn-primary" value="Package Details">
+ 
+  </div>
+  <div class="col-sm-6">
+<input id="bt4" type="button" class="btn btn-primary" value="Add to cart"> 
+  </div>
+</div>
+		</div>
+		</div>
+		<div class="col-lg-3">
+			
+		</div>
+		<div class="col-lg-3">
+			
+		</div>
+	</div>
+</div>
+<div class="container go1">
+	<div class="row">
+		<div class="col-lg-4">
+		<img src="images\make-logo\Capture1.PNG" class="img-fluid">
+		</div>
+		<div class="col-lg-4">
+			<img src="images\make-logo\Capture2.PNG" class="img-fluid">
+		</div>
+		<div class="col-lg-4">
+			<img src="images\make-logo\Capture3.PNG" class="img-fluid">
+		</div>
+	</div>
+</div>
+<div class="container" style="padding-top: 20px;">
+  <div class="row">
+    <div class="col-lg-4" style="padding: 0px;">
+      <div class="public5">
+      <h5>Testimonials</h5>
+      <p>The website experience can be a little better (UX/UI), but everything else was fine. Ads got published as per my date of choice, and i received the soft copy via email too the same day! Would definitely recommend this, it's better priced when compared to similar websites ;)</p>
+      <h6>— Aditya Vikram</h6>
+      <p>Thanks for your services. Really helpful</p>
+      <h6>— Amit Dumlawkar</h6>
+      </div>
+    </div>
+    <div class="col-lg-4 ">
+      <div class="public6">
+      <h5>— FAQ's —</h5>
+      <h6>Q: Can I post my ad to multiple publications?</h6>
+      <p>Yes, definitely. BOOKMYAD offers you complete freedom to choose multiple publications/newspapers and make payments accordingly. Consumers also have the alternative option of composing multiple ads for single or multiple publications. However, we do not recommend it as advertisements can be mixed with wrong publication also.</p>
+      </div>
+      
+    </div>
+    <div class="col-lg-4">
+      <div class="public7">
+     <h5>From the Blog</h5>
+     <img src="images\make-logo\blog-image.jpg">
+     <p>Classified advertisements have always been popular in India. Classified ads have extraordinary reach, cost comparatively lower, and are very simple to compose. Classified text ads have always been the people’s advertising medium in India.</p>
+     <p>The scope of choosing from a vast reserve</p>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+           <div class="col-sm-12 newspapers text-center">
+            <a href="#">
+             <input id="button2" type="button" value="All Testimonials">
+             </a>
+           </div>
+         </div>
+</div>
+<section class="public8" >
+  <div class="container">
+     <h4 class="text-center text1">— Sample ads print in The Hindu —</h4>
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>NADI Astrology Guruji-B. Raju, Services in Delhi from last 20 years. Give your Thumb impression and Know your total life future. Contact: XXXXXXXXXXX</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>God Astrologer in Delhi good prediction specialst in marriage business love an family problem for appointment call SUHAS :8800334456</p>
+          
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>We do all types of Poojas, Yantras & Mantras for Prosperity, Wealth, Education, Business and Life, please Contact 0000000000.</p>
+          
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>God Astrologer in Delhi good prediction specialist in marriage business love an family problem for appointment call SUHAS :8800334456</p>
+          
+        </div>
+      </div>
+    </div>
+     <div class="row">
+
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>24/5'4" MA/B.ed अविवाहित सूंदर गृहकार्य में दक्ष कन्या हेतु वर चाहिए सभी ब्राह्मण मान्य | abc@gmail.com, 08827093330</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>Requires male/female Sales Coordinator, English speaking Telecallers and Computer typist. Good Salary. Walkin FF-20, Palika Bazar GT Road Ghaziabad. 9891750356</p>
+          
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>In Loving Memory of (Name) - Though your presence is virtual, memories that you have left are immortal. (Names of Family Members/ Friends/ Relatives) and friends.</p>
+          
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="public9">
+          <p>(Name) - (Year of Birth - Year of Death): A noble soul whose absence will always be truly felt by friends, relatives, family members and near & dear ones.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------------publication.html end------------------->
+    
+<section id="footer">
+<div class="container">
+<div class="row">
+<div class="eq5">
+<h6>Company</h6>
+<ul>
+<li><a href="#">About us</a></li>
+<li><a href="#">Our Blog</a></li>
+<li><a href="#">Press/Media</a></li>
+<li><a href="#">Career</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Site Map</a></li>
+<li><a href="#">Contact us</a></li>
+</ul>
+</div>
+<div class="eq5">
+<h6>Need help</h6>
+<ul>
+<li><a href="#">How to Book</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Cancellation &amp; Refund </a></li>
+<li><a href="#">Feedback / Complaints</a></li>
+<li><a href="#">E-papers</a></li>
+<li><a href="#">Track My Ad</a></li>
+</ul>
+</div>
+<div class="clearfix hide-md"></div>
+<div class="eq5">
+<h6>Payment Method</h6>
+<ul>
+<li><a href="#">Quick Payment Link</a></li>
+<li><a href="#">Payment Terms</a></li>
+<li><a href="#">Net banking</a></li>
+<li><a href="#">Debit/Credit Card</a></li>
+<li><a href="#">NEFT/RTGS</a></li>
+<li><a href="#">Bank Deposit/Cheque/DD</a></li>
+<br>
+
+</ul>
+</div>
+
+<div class="eq5 ft_vid">
+<h6>Video introduction</h6>
+<iframe src="#" frameborder="0" allowfullscreen=""></iframe>
+<ul>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.facebook.com/bookmyad" target="_blank"><img src="images\make-logo\facebook.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://plus.google.com/+BookmyadOfficial/posts" target="_blank"><img src="images\make-logo\gmail.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://twitter.com/bookmy_ad" target="_blank"><img src="images\make-logo\Twitter.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.youtube.com/channel/UCHiRvwYVChyRb8isRQClejA" target="_blank"><img src="images\make-logo\Youtube.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.instagram.com/bookmyad/" target="_blank"><img src="images\make-logo\Instagram.jpg"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</footer>
+</section>
+  <footer id="footer" class="mt-0">
+    <section class="hero-wrap bg-secondary shadow-md pt-4 pb-3">
+      <div class="hero-bg" style="background-image:url('./images/make-logo/image-5.jpg');"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="row text-light">
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-lock"></i> </div>
+                <h4 class="text-light">100% Secure</h4>
+                <p>Moving your card details to a much more secured place.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-thumbs-up"></i> </div>
+                <h4 class="text-light">Trust pay</h4>
+                <p>100% Payment Protection. Easy Return Policy.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-bullhorn"></i> </div>
+                <h4 class="text-light">Refer & Earn</h4>
+                <p>Invite a friend to sign up and earn up to $100.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-life-ring"></i> </div>
+                <h4 class="text-light">24X7 Support</h4>
+                <p>We're here to help. Have a query and need <a href="#">help</a> ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<script src="vendor/bootstrap-spinner/bootstrap-spinner.js"></script> 
+<script src="vendor/daterangepicker/moment.min.js"></script> 
+<script src="vendor/daterangepicker/daterangepicker.js"></script> 
+<script>
+$(function() {
+ 'use strict';
+  // Hotels Check In Date
+  $('#hotelsCheckIn').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#hotelsCheckIn').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Hotels Check Out Date
+  $('#hotelsCheckOut').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#hotelsCheckOut').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Flight Depart Date
+  $('#flightDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#flightDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Flight Return Date
+  $('#flightReturn').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#flightReturn').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Train Depart Date
+  $('#trainDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#trainDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Bus Depart Date
+  $('#busDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#busDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+});
+</script> 
+<script type="text/javascript">
+      // This is the Feedback toggle functionality it slides the feedback form in and out
+    // of view when the user clicks the div with the class .feedback-toggle
+    $('.feedback-toggle').click( function(){
+        var   left = parseFloat($('.feedback')[0].style.left.match(/[0-9]+/g)) || 50,
+                tgl  = '+=280';
+        (left > 50)  ? tgl = '-=280' : tgl = '+=280';
+        $('.feedback').animate({ left: tgl}, 500);
+    });
+  
+  
+  // This is the form submission AJAX code which also
+    // hides the feednack form.
+
+    $("#feedback-form .btn").click(function() {
+        var url   = "path/to/your/script.php", // the script where you handle the form input.
+                data  = $("#feedback-form").serialize(),
+                isValid   = validate("#feedback-form");
+        if(isValid){
+            $.ajax({
+                type  : "POST",
+                url : url,
+                data  : data , // serializes the form's elements.
+                success : function(data){
+                    $('.feedback').find('.alert-error').fadeIn('fast');
+                    $('.feedback').animate({ left: '-=350'}, 500);
+                },
+                error : function(data){
+                    $('.feedback').find('.alert-block').fadeIn('fast');
+                    return false;
+                }
+            });
+        }
+        return false; // avoid to execute the actual submit of the form.
+    });
+
+
+
+
+
+
+
+</script>
+ 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script>
+            $('.select2').select2();
+        </script>
+<script src="js/theme.js"></script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="images/favicon.png" rel="icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<title></title>
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />-->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader"><div data-loader="dual-ring"></div></div><!-- Preloader End -->
+
+<!-- Document Wrapper   
+============================================= -->
+
+<div class="feedback feedback-toggle rotate" style="width: 170px;margin-left: -20px;" ><small>Request Callback</small></div>
+<div class="feedback feedback-form-wrapper">
+    <form id="feedback-form" class="form-horizontal" method="post">
+        <legend class="text-center">Interested? provide your contact details below</legend>
+        <div class="form-group">
+          <label class="sr-only">Your Name</label>
+          <input id="username" name="username" class="form-control" autocomplete="off" placeholder="Your Name *" required="required" type="text">   
+        </div>
+    <div class="form-group">
+          <label class="sr-only">Email ID</label>
+          <input name="emailquery" id="emailquery" class="form-control" autocomplete="off" placeholder="Your Email *" required="required" type="email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only">Phone Number</label>
+          <input name="phoneno" id="phoneno" class="form-control" autocomplete="off" placeholder="Phone Number *" required="required" type="number">
+        </div>
+        <div class="form-group">
+            <label class="sr-only">Issue</label>
+            <textarea id="issue" name="issue" class="form-control" rows="3" autocomplete="off" placeholder="Write Your Issue *" required="required"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="control-label">I need service on</label>
+          <input class="form-control" name="dateOfReg" id="dateOfReg" autocomplete="off" placeholder="02/03/2014" required="required" min="2015-05-1" type="text">
+        </div>
+    
+        <div class="form-group">
+      <button type="submit" name="sendissuedetails" id="sendissuedetails" class="btn btn-default">Send Details</button>
+        </div>
+    </form>
+</div> 
+
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          
+          <!-- Logo
+          ============================================= -->
+          <div class="logo">
+            <a href="index.html" title="Quickai - HTML Template"><img src="images\make-logo\logo.png" alt="Quickai" width="127" /></a>
+          </div><!-- Logo end -->
+          
+        </div>
+        
+        <div class="header-column justify-content-end">
+        
+          <!-- Primary Navigation
+          ============================================= -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+        <li class="dropdown"> <a class="dropdown-toggle" href="index.html">Home</a>
+                  
+        
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" href="#">Track My Ad</a> 
+                 
+                </li>
+                <li class="dropdown dropdown-mega"> <a class="dropdown-toggle" href="#">How To Booking</a> 
+                  
+                </li>
+                 <li class="dropdown dropdown-mega"> <a class="dropdown-toggle" href="bookads.html">Category</a> 
+                  
+                </li>
+
+                <li class="dropdown active"> <a class="dropdown-toggle" href="#">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                   
+                    <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                    <li><a class="dropdown-item" href="support.html">Support</a></li>
+                    <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li class="login-signup ml-lg-2"><a class="pl-lg-4 pr-0" data-toggle="modal" data-target="#login-signup" href="#" title="Login / Sign up">Login / Sign up <span class="d-none d-lg-inline-block"><i class="fa fa-user"></i></span></a></li>
+              </ul>
+            </div>
+          </nav><!-- Primary Navigation end --> 
+          
+        </div>
+        
+        <!-- Collapse Button
+        ============================================= -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+      </div>
+    </div>
+  </header>
+  <!-- Header end --> 
+  
+<!--------How to Book start------->
+<section class="section-how">
+<div class="container" id="background-section">
+  <div class="row">
+    <div class="col-sm-12">
+     <h5>Q: How can I book/ post an ad on MAKEMYAD?</h5> 
+     <p>BOOK MY AD enables you to choose from a plethora of leading newspapers in India to get your ad published. A simple and convenient procedure will help you to achieve your goals. You just need to click on the BOOKMYAD section of the website and provide detailed information regarding your requirements. Rest of the work will be undertaken by the organization’s highly efficient team</p>
+     <h5>Q: What should I include in an Ad?</h5>
+     <p>If you desire to present an effective Ad, the following guidelines will help you:</p>
+     <p>• Present detailed information in your Ad in order to achieve maximum response.</p>
+     <p>• Appropriate categorization is justified.</p>
+     <p>• Take care to provide accurate contact details.</p>
+     <h5>Q: How is Classified Display Ad different from display ad?</h5>
+     <p>Classified Display Ads are characterized with higher visibility and are upgraded through utilization of images or logos before being published. Meanwhile the Display Ads are expensive, big budget ads which can be published on any page. These are usually found near editorial write ups. Expert Advertisers customarily prioritize these types of ads.</p>
+     <h5>Q: Do I need to pay right now for my ad to be published?</h5>
+     <p>BOOKMYAD lets you save your ad and ensures payment at your ease. Clients’ have the option to make payment at any suitable time before 3 days of the publishing date.</p>
+     <h5>Q: How do I benefit from posting my ad through MAKEMYAD?</h5>
+     <p>Apart from the heavy discount that BOOKMYAD provides to customers, the organization is an epitome of creativity. Clients’ are invited to try its compose-ad-page to check out various styling options and/or templates. Further, it also cooperates with you regarding viewing your ad while editing with our ‘wysiwug’ technology.</p>
+     <h5>Q: Can I post my ad to multiple publications?</h5>
+     <p>Yes, definitely. BOOKMYAD offers you complete freedom to choose multiple publications/newspapers and make payments accordingly. Consumers also have the alternative option of composing multiple ads for single or multiple publications. However, we don’t recommend it as advertisements can be mixed with wrong publication also.</p>
+     <h5>Q: How do I choose a publication?</h5>
+     <p>We acknowledge the complexity involved with choosing a publication which is suitable in terms of cost, circulation and location. Thus, we offer some brilliant options on the selection page. Clients are encouraged to choose the search list which provides them the best ROI.</p>
+     <h5>Q: Why do I need to create account with MAKEMYAD?</h5>
+     <p>Along with the benefit of saving your ad for publishing later, BOOKMYAD offers clients the option to browse through the history of their published or created ads. Further, you can select any of the previous ads in order to edit or republish them.</p>
+     <h5>Q: What is the benefit of posting my ad on MAKEMYAD?</h5>
+     <p>Apart from the regular benefit of getting your ad published free of cost, you can benefit from the classified ads posted by various users on BOOKMYAD. We not only ensure your search to be target oriented but also provide exceptional services.</p>
+     <h5>Q: What are the payment options available?</h5>
+     <p>• Payment can be done online through Credit Card (Visa/ Mastercard/ Ecard) or Netbanking.</p>
+     <p>• Payment can be done through cheque or DD in favor of 'Book My Ad Pvt. Ltd.'</p>
+     <p>• Cons umers are also offered the option of availing Cash-At-Home facility regarding the Delhi/NCR region.</p>
+     <p>• For more details visit Payment Details.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--------How to Book end-------> 
+
+  
+  <!-- Footer
+  ============================================= -->
+  <section id="footer">
+<div class="container">
+<div class="row">
+<div class="eq5">
+<h6>Company</h6>
+<ul>
+<li><a href="#">About us</a></li>
+<li><a href="#">Our Blog</a></li>
+<li><a href="#">Press/Media</a></li>
+<li><a href="#">Career</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Site Map</a></li>
+<li><a href="#">Contact us</a></li>
+</ul>
+</div>
+<div class="eq5">
+<h6>Need help</h6>
+<ul>
+<li><a href="#">How to Book</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Cancellation &amp; Refund </a></li>
+<li><a href="#">Feedback / Complaints</a></li>
+<li><a href="#">E-papers</a></li>
+<li><a href="#">Track My Ad</a></li>
+</ul>
+</div>
+<div class="clearfix hide-md"></div>
+<div class="eq5">
+<h6>Payment Method</h6>
+<ul>
+<li><a href="#">Quick Payment Link</a></li>
+<li><a href="#">Payment Terms</a></li>
+<li><a href="#">Net banking</a></li>
+<li><a href="#">Debit/Credit Card</a></li>
+<li><a href="#">NEFT/RTGS</a></li>
+<li><a href="#">Bank Deposit/Cheque/DD</a></li>
+<br>
+<li><a href="/refer-friend.php"><img src="images\make-logo\refer-image.png"></a></li>
+</ul>
+</div>
+
+<div class="eq5 ft_vid">
+<h6>Video introduction</h6>
+<iframe src="https://www.youtube.com/embed/EQ3DhQlgF50" frameborder="0" allowfullscreen=""></iframe>
+<ul>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.facebook.com/bookmyad" target="_blank"><img src="images\make-logo\facebook.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://plus.google.com/+BookmyadOfficial/posts" target="_blank"><img src="images\make-logo\gmail.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://twitter.com/bookmy_ad" target="_blank"><img src="images\make-logo\Twitter.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.youtube.com/channel/UCHiRvwYVChyRb8isRQClejA" target="_blank"><img src="images\make-logo\Youtube.jpg"></a></li>
+<li style="display:inline-block; vertical-align:top"><a href="https://www.instagram.com/bookmyad/" target="_blank"><img src="images\make-logo\Instagram.jpg"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</footer>
+</section>
+  <footer id="footer" class="mt-0">
+    <section class="hero-wrap bg-secondary shadow-md pt-4 pb-3">
+      <div class="hero-bg" style="background-image:url('./images/make-logo/image-5.jpg');"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="row text-light">
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-lock"></i> </div>
+                <h4 class="text-light">100% Secure</h4>
+                <p>Moving your card details to a much more secured place.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-thumbs-up"></i> </div>
+                <h4 class="text-light">Trust pay</h4>
+                <p>100% Payment Protection. Easy Return Policy.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-bullhorn"></i> </div>
+                <h4 class="text-light">Refer & Earn</h4>
+                <p>Invite a friend to sign up and earn up to $100.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="featured-box style-1">
+                <div class="featured-box-icon text-light"> <i class="fa fa-life-ring"></i> </div>
+                <h4 class="text-light">24X7 Support</h4>
+                <p>We're here to help. Have a query and need <a href="#">help</a> ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Modal Dialog - Login/Signup end --> 
+
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<script src="vendor/bootstrap-spinner/bootstrap-spinner.js"></script> 
+<script src="vendor/daterangepicker/moment.min.js"></script> 
+<script src="vendor/daterangepicker/daterangepicker.js"></script> 
+<script>
+$(function() {
+ 'use strict';
+  // Hotels Check In Date
+  $('#hotelsCheckIn').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#hotelsCheckIn').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Hotels Check Out Date
+  $('#hotelsCheckOut').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#hotelsCheckOut').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Flight Depart Date
+  $('#flightDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#flightDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Flight Return Date
+  $('#flightReturn').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#flightReturn').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Train Depart Date
+  $('#trainDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#trainDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+  
+  // Bus Depart Date
+  $('#busDepart').daterangepicker({
+	singleDatePicker: true,
+	minDate: moment(),
+	autoUpdateInput: false,
+	}, function(chosen_date) {
+  $('#busDepart').val(chosen_date.format('MM-DD-YYYY'));
+  });
+});
+</script> 
+<script type="text/javascript">
+      // This is the Feedback toggle functionality it slides the feedback form in and out
+    // of view when the user clicks the div with the class .feedback-toggle
+    $('.feedback-toggle').click( function(){
+        var   left = parseFloat($('.feedback')[0].style.left.match(/[0-9]+/g)) || 50,
+                tgl  = '+=280';
+        (left > 50)  ? tgl = '-=280' : tgl = '+=280';
+        $('.feedback').animate({ left: tgl}, 500);
+    });
+  
+  
+  // This is the form submission AJAX code which also
+    // hides the feednack form.
+
+    $("#feedback-form .btn").click(function() {
+        var url   = "path/to/your/script.php", // the script where you handle the form input.
+                data  = $("#feedback-form").serialize(),
+                isValid   = validate("#feedback-form");
+        if(isValid){
+            $.ajax({
+                type  : "POST",
+                url : url,
+                data  : data , // serializes the form's elements.
+                success : function(data){
+                    $('.feedback').find('.alert-error').fadeIn('fast');
+                    $('.feedback').animate({ left: '-=350'}, 500);
+                },
+                error : function(data){
+                    $('.feedback').find('.alert-block').fadeIn('fast');
+                    return false;
+                }
+            });
+        }
+        return false; // avoid to execute the actual submit of the form.
+    });
+
+
+
+
+
+
+
+</script>
+ 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script>
+            $('.select2').select2();
+        </script>
+<script src="js/theme.js"></script>
+</body>
+</html>
